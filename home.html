@@ -1,0 +1,23 @@
+<h1 class="jumbotron" enter="changeColor()" ng-style="{color}">
+  Powered by AngularJS
+</h1>
+
+<button class="btn btn-primary" ng-click="displayData()">{{ btnText }}</button>
+<br /><br />
+
+<table class="table table-dark" ng-show="data">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Message</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="item in data">
+      <td>{{ item.commentId }}</td>
+      <td>{{ item.message }}</td>
+      <td>{{ item.date }}</td>
+    </tr>
+  </tbody>
+</table>

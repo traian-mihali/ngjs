@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="AngularJS">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.0/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.0/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="HomeController.js"></script>
+    <script src="NotFoundController.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <title>AngularJS CheatSheet</title>
+    <style>
+      body {
+        padding: 30px;
+      }
+
+      button {
+        margin: 10px 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div ng-view></div>
+  </body>
+</html>
