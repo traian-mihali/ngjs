@@ -44,7 +44,9 @@ app.directive("zippy", function() {
   };
 });
 
-app.config(function($routeProvider) {
+app.config(function($routeProvider, $locationProvider) {
+  $locationProvider.hashPrefix("");
+
   $routeProvider
     .when("/", {
       templateUrl: "home.html",
