@@ -1,7 +1,7 @@
 (function() {
   let app = angular.module("AngularJS");
 
-  function HomeController($scope) {
+  function HomeController($scope, $location) {
     let data = [
       {
         commentId: 1,
@@ -43,6 +43,10 @@
 
     $scope.changeColor = function() {
       $scope.color = $scope.color === "#FB4B4E" ? "#700548" : "#FB4B4E";
+    };
+
+    $scope.redirectTo = function() {
+      $location.path("/components/zippy");
     };
   }
 

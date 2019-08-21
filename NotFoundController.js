@@ -9,8 +9,6 @@
       url: "/not-found"
     };
 
-    console.log($routeParams);
-
     $scope.showDetails = false;
     $scope.btnText = "Show Details";
 

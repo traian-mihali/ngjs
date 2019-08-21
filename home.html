@@ -3,10 +3,13 @@
 </h1>
 
 <button class="btn btn-primary" ng-click="displayData()">{{ btnText }}</button>
+<button class="btn btn-primary" ng-click="redirectTo()">
+  Got to Zippy Component
+</button>
 <br /><br />
 
-<table class="table table-dark" ng-show="data">
-  <thead>
+<table class="table table-hover" ng-show="data">
+  <thead class="thead-dark">
     <tr>
       <th>Id</th>
       <th>Message</th>
@@ -15,7 +18,7 @@
   </thead>
   <tbody>
     <tr ng-repeat="item in data">
-      <td>{{ item.commentId }}</td>
+      <td active>{{ item.commentId }}</td>
       <td>{{ item.message }}</td>
       <td>{{ item.date }}</td>
     </tr>
