@@ -15,6 +15,7 @@
 
     $scope.clear = function() {
       $scope.zippy = {};
+      $scope.$$childHead.isVisible = false;
     };
   }
 
