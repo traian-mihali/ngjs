@@ -1,4 +1,4 @@
-var app = angular.module("AngularJS", ["ngRoute"]);
+var app = angular.module("AngularJS", ["ngRoute", "ngAnimate"]);
 
 app.directive("enter", function() {
   return function(scope, element, attr) {
@@ -18,7 +18,7 @@ app.directive("zippy", function() {
     template: `
             <div>
               <h2 ng-click="toggleContent()" ng-style="title && style" >{{title}}</h2>
-              <div ng-show="isVisible" ng-style="contentStyle"><p ng-transclude></p></div>
+              <div class="animate-if" ng-if="isVisible" ng-style="contentStyle"><p ng-transclude></p></div>
             </div>
             `,
     link: function(scope, element, attr) {

@@ -2,6 +2,8 @@
   let app = angular.module("AngularJS");
 
   function ZippyController($scope, $location) {
+    this.toggle = true;
+
     $scope.redirectTo = function() {
       $location.path("/");
     };
