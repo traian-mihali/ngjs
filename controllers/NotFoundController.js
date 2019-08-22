@@ -25,5 +25,5 @@
     // };
   }
 
-  app.controller("NotFoundController", NotFoundController);
+  app.controller("controllers/NotFoundController", NotFoundController);
 })();

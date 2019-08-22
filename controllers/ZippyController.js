@@ -1,7 +1,7 @@
 (function() {
   let app = angular.module("AngularJS");
 
-  function ZippyController($scope, $location) {
+  function ZippyController($scope, $location, $rootScope) {
     this.toggle = true;
 
     $scope.redirectTo = function() {
@@ -21,5 +21,5 @@
     };
   }
 
-  app.controller("ZippyController", ZippyController);
+  app.controller("controllers/ZippyController", ZippyController);
 })();

@@ -50,5 +50,5 @@
     };
   }
 
-  app.controller("HomeController", HomeController);
+  app.controller("controllers/HomeController", HomeController);
 })();

@@ -50,16 +50,16 @@ app.config(function($routeProvider, $locationProvider) {
 
   $routeProvider
     .when("/", {
-      templateUrl: "home.html",
-      controller: "HomeController"
+      templateUrl: "views/home.html",
+      controller: "controllers/HomeController"
     })
     .when("/components/zippy", {
-      templateUrl: "ZippyComponent.html",
-      controller: "ZippyController"
+      templateUrl: "views/ZippyComponent.html",
+      controller: "controllers/ZippyController"
     })
     .when("/not-found", {
-      templateUrl: "404.html",
-      controller: "NotFoundController"
+      templateUrl: "views/404.html",
+      controller: "controllers/NotFoundController"
     })
     .otherwise({ redirectTo: "/not-found" });
 });
