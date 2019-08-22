@@ -1,10 +1,10 @@
-<h1 enter="changeBackground()" ng-style="toggleColor" class="jumbotron">
+<h1 ng-style="toggleColor" class="jumbotron">
   {{ error.message }}
 </h1>
 
 <button class="btn btn-danger" ng-click="handleClick()">{{ btnText }}</button>
 
-<ul class="list-group " ng-show="showDetails">
+<ul class="list-group animate-if" ng-if="showDetails">
   <li class="list-group-item btn-outline-danger">
     Status Code: {{ error.status }}
   </li>

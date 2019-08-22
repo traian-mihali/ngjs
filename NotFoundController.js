@@ -17,13 +17,12 @@
       $scope.btnText = $scope.showDetails ? "Hide Details" : "Show Details";
     };
 
-    $scope.toggleColor = null;
-
-    $scope.changeBackground = function() {
-      $scope.toggleColor = !$scope.toggleColor
-        ? { "background-color": "#EC4E20", color: "white" }
-        : null;
-    };
+    // $scope.toggleColor = null;
+    // $scope.changeBackground = function() {
+    //   $scope.toggleColor = !$scope.toggleColor
+    //     ? { "background-color": "#000080", color: "white" }
+    //     : null;
+    // };
   }
 
   app.controller("NotFoundController", NotFoundController);

@@ -32,7 +32,8 @@ app.directive("zippy", function() {
         margin: "0px",
         padding: "50px",
         backgroundColor: "#ccc",
-        borderRadius: "5px"
+        borderRadius: "5px",
+        cursor: "pointer"
       };
 
       scope.contentStyle = {
